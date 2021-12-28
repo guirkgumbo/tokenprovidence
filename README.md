@@ -26,8 +26,11 @@ tldr: Simulate a contract call that buys, approves and sells a token within a si
 ## Mainnet vs Testnet
 Everything is in perspective of bsc but can be easily mimicked to eth.
 Following changes needs to be made between the testnet and mainnet:
+
 1. Contract: `TokenProvidence.sol`: Line [42-43] (different keccak256) and line [107-114] different PCS router and factory addresses.
+
 2. `TokenProvidence_Mainnet.sol` and `TokenProvidence_Testnet.sol` exist for easy switch.
+
 2. Web3: `config.js`: Different `chainId` and `node`. 
 
 ## ```private_key.json``` format:
